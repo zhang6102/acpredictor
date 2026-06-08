@@ -192,7 +192,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="🧬 抗癌肽智能预测系统",
                             batch_btn = gr.Button("🚀 开始批量预测", variant="primary")
                         with gr.Column(scale=2):
                             batch_status = gr.Textbox(label="状态", lines=2)
-                    batch_output = gr.Dataframe(label="预测结果", height=400, type="pandas")
+                    batch_output = gr.Dataframe(label="预测结果")
                     batch_stats = gr.Markdown("")  # 用于显示统计信息
                     download_file = gr.File(label="下载预测结果")  # 显示下载文件
 
